@@ -10,65 +10,147 @@
     <!-- Using google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="bulma-timeline.min.css">
+    <style>
+        .fullheight {
+            height: 100vh;
+        }
+        
+        .vcenter {
+            margin: 0;
+            position: relative;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        
+        .hcenter {
+            margin: 0;
+            position: relative;
+            left: 50%;
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        
+        .subtitle {
+            background-color: #6f4a8e;
+            height: 4px;
+            width: 90px;
+        }
+        
+        .halfwidth {
+            width: 50vh;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- side navbar -->
-    <header>
-        <div class="profile">
-            <!-- profile picture -->
-            <img src="" alt="">
-            <!-- my name -->
-            <h1>Andre Goh</h1>
-            <!-- github and linkedin -->
-            <div class="social-links">
-                <a href=""></a>
-                <a href=""></a>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div>
+                <p class="title">Andre Goh</p>
             </div>
         </div>
-        <nav>
-            <!-- links to sections of website -->
-            <ul>
-                <li><a class="nav-links" href="">Home</a></li>
-                <li><a class="nav-links" href="">About</a></li>
-                <li><a class="nav-links" href="">Experiences</a></li>
-                <li><a class="nav-links" href="">Projects</a></li>
-                <li><a class="nav-links" href="">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- first thing people see -->
-    <section id="hero">
-
     </section>
-    <main id="main">
-        <section id="about" class="about">
-            <div class="section-title">
-                <h2>About</h2>
+    <section class="section fullheight">
+        <h1 class="title">About</h1>
+        <div class="subtitle"></div>
+    </section>
+    <section class="section fullheight">
+        <h1 class="title">Experiences</h1>
+        <div class="subtitle"></div>
+        <div class="timeline is-centered">
+            <header class="timeline-header">
+                <span class="tag is-medium is-primary">2021</span>
+            </header>
+            <div class="timeline-item">
+                <div class="timeline-marker is-primary"></div>
+                <div class="timeline-content">
+                    <p class="heading">May 2021 - Currently</p>
+                    <p>My Personal Website</p>
+                </div>
             </div>
-            <p>I am excited to always try new technologies and adapt to change as I believe that's what makes human capable. I want to make a change with my knowledge and skills.</p>
-
-        </section>
-        <section id="experiences" class="experiences">
-            <div class="section-title">
-                <h2>Experiences</h2>
+            <div class="timeline-item">
+                <div class="timeline-marker is-primary"></div>
+                <div class="timeline-content">
+                    <p class="heading">Feb 2021 - Currently</p>
+                    <p>Intern @<a href="">i-Sprint Innovations Pte Ltd</a></p>
+                </div>
             </div>
-        </section>
-        <section id="projects" class="projects">
-            <div class="section-title">
-                <h2>Projects</h2>
+            <header class="timeline-header">
+                <span class="tag is-medium is-primary">2020</span>
+            </header>
+            <div class="timeline-item">
+                <div class="timeline-marker is-primary"></div>
+                <div class="timeline-content">
+                    <p class="heading">Aug 2020 - Oct 2020</p>
+                    <p>Intern @<a href="">Glee Trees Pte Ltd</a></p>
+                </div>
             </div>
-        </section>
-        <section id="contact" class="contact">
-            <div class="section-title">
-                <h2>Contact</h2>
+            <header class="timeline-header">
+                <span class="tag is-primary">2019</span>
+            </header>
+            <div class="timeline-item">
+                <div class="timeline-marker is-primary"></div>
+                <div class="timeline-content">
+                    <p class="heading">Aug 2017 - Oct 2017</p>
+                    <p>Intern @<a href="">Inspire Tech Pte Ltd</a></p>
+                </div>
             </div>
-        </section>
-    </main>
-    <footer id="footer">
-
-    </footer>
+            <header class="timeline-header">
+                <span class="tag is-primary">2017</span>
+            </header>
+            <div class="timeline-item">
+                <div class="timeline-marker is-primary"></div>
+                <div class="timeline-content">
+                    <p class="heading">Jan 2017 - Mar 2017</p>
+                    <p>Intern @<a href="">Inspire Tech Pte Ltd</a></p>
+                </div>
+            </div>
+            <header class="timeline-header">
+                <span class="tag is-medium is-primary">End</span>
+            </header>
+        </div>
+    </section>
+    <section class="section fullheight">
+        <h1 class="title">Contact</h1>
+        <div class="subtitle"></div>
+        <form class="halfwidth hcenter">
+            <div class="field is-horizontal">
+                <div class="field-body">
+                    <div class="field">
+                        <input type="text" class="input" placeholder="Name">
+                    </div>
+                    <div class="field">
+                        <input type="email" class="input" placeholder="Email">
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-body">
+                    <div class="field">
+                        <input type="text" class="input" placeholder="Subject">
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-body">
+                    <div class="field">
+                        <textarea class="textarea" placeholder="Message"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-body">
+                    <div class="field">
+                        <button class="button is-primary hcenter">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
 </body>
 
 </html>
