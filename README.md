@@ -1,2 +1,2 @@
 # andreas
-Andreas will create internet footprints, so that others can know about me!
+Hey there! Welcome to project andreas, a personal portfolio for me, Andre Goh. 
