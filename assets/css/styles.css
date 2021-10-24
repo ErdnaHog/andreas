@@ -511,15 +511,19 @@ img {
 }
 
 .skills__html {
-    width: 90%;
+    width: 75%;
 }
 
 .skills__css {
-    width: 90%;
+    width: 75%;
 }
 
 .skills__js {
-    width: 90%;
+    width: 65%;
+}
+
+.skills__angularjs {
+    width: 65%;
 }
 
 .skills__close .skills__list {
