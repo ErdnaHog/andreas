@@ -465,6 +465,19 @@ img {
     margin-right: var(--mb-0-75);
 }
 
+.skills__data {
+    display: flex;
+    column-gap: 1em;
+}
+
+.skills__data>i {
+    font-size: 1.7rem;
+}
+
+.skills__content {
+    flex-grow: 1;
+}
+
 .skills__title {
     font-size: var(--h3-font-size);
 }
